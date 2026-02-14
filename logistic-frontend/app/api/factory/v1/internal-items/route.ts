@@ -3,7 +3,7 @@ import { auth } from '@/lib/auth';
 import { applyRateLimit, addRateLimitHeaders } from '@/lib/rate-limit-helper';
 
 const FACTORY_API_URL = process.env.FACTORY_API_URL || 'http://localhost:8000';
-const FACTORY_API_KEY = process.env.FACTORY_API_KEY || process.env.INVENTORY_API_KEY || '';
+const FACTORY_API_KEY = process.env.FACTORY_API_KEY || '';
 
 export const revalidate = 60;
 
