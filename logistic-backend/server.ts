@@ -1,11 +1,9 @@
-import app from './api/index.js'
-import { runMigrations } from './src/migrations.js'
+import app from './api/index.js';
 
-const port = Number(process.env.PORT || 8004)
+const PORT = process.env.PORT || 8004;
+const HOST = process.env.HOST || '0.0.0.0';
 
-await runMigrations()
-
-app.listen(port, () => {
-  console.log(`🚀 Logistics Backend escuchando en http://localhost:${port}`)
-})
-
+app.listen(Number(PORT), () => {
+  console.log(`🚀 Logistics Backend API corriendo en http://localhost:${PORT}`);
+  console.log(`📚 Documentación Swagger en http://localhost:${PORT}/swagger`);
+});

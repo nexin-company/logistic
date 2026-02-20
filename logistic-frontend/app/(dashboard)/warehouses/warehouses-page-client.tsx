@@ -29,7 +29,6 @@ export function WarehousesPageClient({
   return (
     <div className="flex flex-1 flex-col p-4 md:p-6 space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-semibold">Almacenes</h2>
         <Button onClick={handleRefresh} variant="outline">
           Actualizar
         </Button>

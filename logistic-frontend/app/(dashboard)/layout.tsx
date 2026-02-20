@@ -7,7 +7,8 @@ import {
   Package,
   Link2,
   Warehouse,
-  Truck
+  Truck,
+  BarChart3
 } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -70,7 +71,7 @@ function DesktopNav() {
         </NavItem>
 
         <NavItem href="/stock" label="Stock">
-          <Warehouse className="h-5 w-5" />
+          <BarChart3 className="h-5 w-5" />
         </NavItem>
 
         <NavItem href="/mappings" label="Mapeos">
@@ -130,7 +131,7 @@ function MobileNav() {
             href="/stock"
             className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
           >
-            <Warehouse className="h-5 w-5" />
+            <BarChart3 className="h-5 w-5" />
             Stock
           </Link>
           <Link
